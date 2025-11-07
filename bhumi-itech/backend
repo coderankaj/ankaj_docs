@@ -1,0 +1,20 @@
+sudo systemctl start daphne.service
+sudo systemctl restart daphne.service
+sudo systemctl status daphne.service
+journalctl -u daphne.service
+journalctl -u daphne.service  -f
+
+
+sudo systemctl start celery-worker
+sudo systemctl restart celery-worker
+sudo systemctl status celery-worker
+journalctl -u celery-worker
+journalctl -u celery-worker  -f
+
+
+sudo systemctl enable  celery-beat
+sudo systemctl start celery-beat
+sudo systemctl restart celery-beat
+sudo systemctl status celery-beat
+journalctl -u celery-beat
+journalctl -u celery-beat  -f

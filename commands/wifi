@@ -1,0 +1,13 @@
+sudo nmcli radio wifi off
+sudo nmcli radio wifi on
+
+sudo nmcli device wifi list
+sudo nmcli device wifi connect "<SSID>" password "<password>"
+sudo nmcli device wifi connect "Airtel_hari_4052" password "air04786"
+sudo nmcli device wifi connect "narzo" password "@ankaj11"
+sudo nmcli device wifi connect AA:6A:B1:A7:6A:A6 password '@ankaj11'
+sudo nmcli device wifi connect "Airtel_gane_4024" password 'air55956'
+
+sudo nmcli device wifi rescan
+sleep 2
+sudo nmcli device wifi list

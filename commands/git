@@ -1,0 +1,13 @@
+
+
+git reset --hard HEAD
+
+# stash all files
+git stash
+
+# stash selected files
+git stash push -m "temp local changes" blacklisted_domains.txt cloud_management/utils.py cyber_range_platform/settings.py requirements.txt
+
+git pull
+
+git stash pop
